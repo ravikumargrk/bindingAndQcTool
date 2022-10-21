@@ -65,7 +65,8 @@ def multiply(metaMatrix, description:str, replaceStr:str, instances):
                             key : [rowDict[key][row.index[0]]]
                         }
                     )
-            metaMatrix = metaMatrix.append(pd.DataFrame.from_dict(newRowDict), ignore_index=True)
+            # metaMatrix = metaMatrix.append(pd.DataFrame.from_dict(newRowDict), ignore_index=True)
+            metaMatrix = pd.concat([metaMatrix, pd.DataFrame.from_dict(newRowDict)], ignore_index=True)
 
     return metaMatrix
 
