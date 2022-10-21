@@ -1,0 +1,4 @@
+description,equipment,equipmentName,equipmentInstance,component,componentName,componentInstance,subcomponent,subcomponentName,subcomponentInstance,measureLocation,measureProperty,measureType,measureUnit,tagType,limRangeHi,limRangeLo,limHi,limLo,measureInstance,system,systemName,systemInstance,limHiHi,limLoLo,dataTagId
+BOILER LOAD,FUEL FEEDING AND COMBUSTION SYSTEM,FUEL FEEDING AND COMBUSTION SYSTEM 1,1,BOILER,BOILER 1,1,-,-,-,-,STEAM,LOAD,ANALOG,ANALOG,-,-,-,-,1,RG Boiler,RG 1,1,-,-,TEST1
+OXYGEN PERCENTAGE,FLUE GAS SYSTEM,FLUE GAS SYSTEM 1,1,OXYGEN SENSOR,OXYGEN SENSOR 1,1,-,-,-,OUTLET,OXYGEN,LEVEL,%,ANALOG,-,-,-,-,1,RG Boiler,RG 1,1,-,-,TEST2
+STACK TEMPERATURE,FEED WATER SYSTEM,FEED WATER SYSTEM 1,1,ECONOMIZER,ECONOMIZER 1,1,TEMP. ELEMENT,TEMP. ELEMENT 1,1,OUTLET,FLUE GAS,TEMPERATURE,DEG C,ANALOG,-,-,-,-,1,RG Boiler,RG 1,1,-,-,TEST3
