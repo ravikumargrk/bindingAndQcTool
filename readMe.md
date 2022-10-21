@@ -41,8 +41,9 @@
     'BOOSTER FAN': {'instances': 1},
     'SCREW FEEDER': {'instances': 1},
     'GRATE': {
-        'TROLLEY': {'instances': 1}}
+        'TROLLEY': {'instances': 1}
         }
+}
 ```
 
 ### generate meta data
