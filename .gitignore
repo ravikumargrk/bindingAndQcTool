@@ -1,4 +1,7 @@
 *.csv
-*.xlsx
+
+standardMetaMatrix-backCompatible.xlsx
+standardMetaMatrix.xlsx
+
 dontRunThisShit.ipynb
 *.eml

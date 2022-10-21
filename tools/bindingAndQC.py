@@ -187,6 +187,8 @@ def generateMetaData(bindingSheetPath:str, meta:pd.DataFrame, metaDataOutFilePat
     if not metaDataOutFilePath[-4:]=='.csv':
         metaDataOutFilePath += '.csv'
 
+    # REMOVE EXTRA COLUMN
+    metaFile = metaFile[metaFile.columns[1:]]
     metaFile.to_csv(metaDataOutFilePath, index=False)
     
     return metaFile
