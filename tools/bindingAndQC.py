@@ -19,7 +19,7 @@ config = {
     'steam totaliser unit'          :'KG',
     'water totaliser unit'          :'KG',
     'load brackets'                 : 5,
-    'Number of grates/beds'         : 2
+    'Number of grates/beds'         : 1
 }
 
 maskForMultipleComponents = (standardMetaMatrix[('-', '-', '-', '-','componentInstance')] == '__c__') #| (standardMetaMatrix[('-', '-', '-', '-','subcomponentInstance')] == '__c__')
@@ -170,13 +170,14 @@ def generateTemplate(config:dict, CSVfileName='bindingSheet'):
 
 def generateMetaData(bindingSheetPath:str, meta:pd.DataFrame, metaDataOutFilePath):
 
-    metaFile = meta
-    metaFile.columns = meta.columns.get_level_values(4)
+    metaFile = meta.reset_index()
+    metaFile.columns = metaFile.columns.get_level_values(4)
 
     if not bindingSheetPath[-4:]=='.csv':
         bindingSheetPath += '.csv'
 
     bindingSheetData = pd.read_csv(bindingSheetPath)
+
     v_bools = pd.notna(bindingSheetData['dataTagId'])
 
     metaFile['dataTagId'] = bindingSheetData['dataTagId']
