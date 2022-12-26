@@ -1,7 +1,6 @@
+.gitignore
 *.csv
-
-standardMetaMatrix-backCompatible.xlsx
-standardMetaMatrix.xlsx
+*.xlsx
 
 dontRunThisShit.ipynb
 *.eml
